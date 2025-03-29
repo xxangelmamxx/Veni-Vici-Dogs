@@ -38,24 +38,20 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you added to improve the site's functionality!
+* [X] gradient shifting background (little experiment)
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![image](https://github.com/user-attachments/assets/0117ab70-1418-4566-934b-be0e37479664)
 
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+GIF created with GIPHY
+
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+It wasn't terrible, although getting the history, main and ban list containers to the perfect ratio was a little tricky.
 
 ## License
 
