@@ -1,0 +1,114 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color:#fff;
+}
+
+h1{
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+}
+
+.moving-background {
+  background: linear-gradient(45deg, #007bff, #6610f2, #e83e8c, #fde614);
+  background-size: 400% 400%;
+  animation: moveGradient 10s linear infinite;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.history h2,
+.main h1,
+.ban-list h2 {
+  text-align: center;
+}
+
+.history {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15%;
+  height: 100%;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.card {
+  background-color: #00000097;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+.card p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.main {
+  position: fixed;
+  top: 0;
+  left: 15%;
+  width: 70%;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.ban-list {
+  position: fixed;
+  top: 0;
+  left: 85%;
+  width: 15%;
+  height: 100%;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.api-container {
+  width: 400px;
+  margin: 0 auto 30px auto;
+}
+
+.api-image-container {
+  width: 100%;
+  height: 400px;
+  border: 10px solid #00000073;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.api-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.api-dog-details {
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
