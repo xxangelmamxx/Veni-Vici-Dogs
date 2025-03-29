@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 
-const API_KEY = "live_cqIquSjldpJEvQqzsBKT0Ta7tPYjV4iODUdiCsWNMSQmK50syXe5gn8YBxGoCnD8";
+const ACCESS_KEY = import.meta.env.VITE_APP_ACCESS_KEY;
 
 function App() {
   const [currentDog, setCurrentDog] = useState(null);
@@ -18,7 +18,7 @@ function App() {
       try {
         const response = await fetch(
           'https://api.thedogapi.com/v1/images/search?has_breeds=1',
-          { headers: { 'x-api-key': API_KEY } }
+          { headers: { 'x-api-key': ACCESS_KEY } }
         );
         const data = await response.json();
         if (data && data.length > 0) {
